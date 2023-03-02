@@ -12,6 +12,7 @@ local themes_match = {
     gruvbox = "#261C00",
     everforest = "#282E2C",
     deus = "#16191D",
+    material = "#202D2F"
 }
 
 local line_bg_color = themes_match[vim.g.colors_name]
