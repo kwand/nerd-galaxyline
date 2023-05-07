@@ -12,7 +12,8 @@ local themes_match = {
     gruvbox = "#261C00",
     everforest = "#282E2C",
     deus = "#16191D",
-    material = "#202D2F"
+    material = "#202D2F" -- https://github.com/marko-cerovac/material.nvim
+    tokyonight = "#24283B" -- https://github.com/folke/tokyonight.nvim
 }
 
 local line_bg_color = themes_match[vim.g.colors_name]
