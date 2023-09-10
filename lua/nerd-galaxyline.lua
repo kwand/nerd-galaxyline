@@ -157,14 +157,14 @@ insert_left{
   ViMode = {
     icon = function()
         local icons = {
-            n      = ' ',
+            n      = '󰆾 ',
             i      = ' ',
-            c      = 'ﲵ ',
-            V      = ' ',
-            [''] = ' ',
-            v      = ' ',
-            C      = 'ﲵ ',
-            R      = '﯒ ',
+            c      = '󰞷 ',
+            V      = '󰆿 ',
+            [''] = '󰆿 ',
+            v      = '󰆿 ',
+            C      = '󰞷 ',
+            R      = '󰛔 ',
             t      = ' ',
         }
         return icons[vim.fn.mode()]
@@ -356,7 +356,7 @@ insert_left {
      provider = 'DiagnosticHint',
      condition = function() return checkwidth() and not use_coc end,
      highlight = {colors.white,colors.line_bg},
-     icon = '  ',
+     icon = ' 󰌶 ',
     }
 }
 
@@ -410,7 +410,7 @@ insert_right{
 insert_right{
   Encode = {
     provider = 'FileEncode',
-    separator = '',
+    separator = '󰊄',
     separator_highlight = {colors.blue,colors.line_bg},
     highlight = {colors.cyan, colors.line_bg,'bold'},
         condition = checkwidth,
@@ -442,16 +442,16 @@ require ('galaxyline').section.short_line_left = {
           ['NvimTree'] = ' Tree',
           ['fugitive'] = ' Fugitive',
           ['fugitiveblame'] = ' Fugitive Blame',
-          ['help'] = ' Help',
+          ['help'] = '󰋗 Help',
           ['minimap'] = 'Minimap',
-          ['qf'] = ' Quick Fix',
+          ['qf'] = '󰁨 Quick Fix',
           ['tabman'] = 'Tab Manager',
           ['tagbar'] = 'Tagbar',
           ['toggleterm'] = 'Terminal',
           ['FTerm'] = 'Terminal',
           ['NeogitStatus'] = ' Neogit Status',
           ['NeogitPopup'] = ' Neogit Popup',
-          ['NeogitCommitMessage'] = ' Neogit Commit',
+          ['NeogitCommitMessage'] = '󰍣 Neogit Commit',
           ['DiffviewFiles'] = ' Diff View'
         }
         local name = BufferTypeMap[vim.bo.filetype] or ' Editor'
